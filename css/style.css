@@ -154,3 +154,126 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     background: linear-gradient(to right,#487fee,#595AED);
 }
+
+.prop-thumbnail {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 4px;
+}
+
+
+.prop-thumbnail::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0,0,0,0.3);
+}
+
+.prop-thumbnail span.tag {
+    position: absolute;
+    background: #08BB8D;
+    padding: 10px 15px;
+    left: 20px;
+    top: 20px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+}
+
+.prop-thumbnail .price {
+    color: #fff;
+    position: absolute;
+    background: #595AED;
+    right: 20px;
+    top: 20px;
+    font-size: 14px;
+    padding: 10px 24px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.recent_item_footer {
+    position: absolute;
+    bottom: 0;
+    background: #28B1C9;
+    width: 100%;
+    color: #fff;
+    padding: 15px 20px;
+}
+a.see-more-btn {
+    background: linear-gradient(to right,#487fee,#595AED);
+    display: inline-block;
+    padding: 16px 43px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+.recent_icon {
+    display: inline-block;
+}
+
+.recent_icon span {
+    font-weight: 200;
+    font-size: 9px;
+    display: block;
+    color: #000;
+}
+
+
+.recent_item_footer span {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.recent_icon i {
+    margin-right: 5px;
+}
+
+h2.section-title {
+    font-size: 34px;
+    font-weight: 600;
+    color: #333333;
+}
+
+p.section-subtitle {
+    font-size: 14px;
+    color: #686767;
+}
+
+.single-property-widget {box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);border-radius: 4px;margin-bottom: 70px;border: 1px solid rgba(162, 162, 162, 0.13);}
+
+
+.prop-content {
+    padding: 20px;
+}
+
+.prop-content .location {
+    font-size: 12px;
+    color: #686767;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.prop-content h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 8px;
+}
+
+section.recent-property-section {
+    padding: 120px 0;
+}
+section.recent-property-section a {
+    text-decoration: none;
+}
