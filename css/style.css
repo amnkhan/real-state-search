@@ -20,7 +20,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 120px 0;
     min-height: 100vh;
 }
-.hero-section::before {
+
+.search-hero-section {
+    position: relative;
+    background-image: url(../images/hero-bg1.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 90px 0;
+    min-height: 400px;
+}
+.hero-section::before , .search-hero-section::before {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -276,4 +285,114 @@ section.recent-property-section {
 }
 section.recent-property-section a {
     text-decoration: none;
+}
+.breadcrumbs ul li {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 1.1;
+}
+.breadcrumbs ul li a {
+    font-size: 14px;
+    font-weight: 200;
+    color: #FFFFFF;
+    line-height: 1.1;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.breadcrumbs ul li:not(:last-child)::after {
+    display: inline-block;
+    content: '/';
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.home_content .home_title {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.intro-section {
+    padding-top: 80px;
+}
+
+.intro_title h2 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 0.75;
+    color: #252525;
+}
+.intro_tags {
+    margin-top: 28px;
+}
+.intro_tags ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.intro_tags ul li:not(:last-child) {
+    margin-right: 5px;
+}
+.intro_tags ul li {
+    display: inline-block;
+    height: 35px;
+    background: #EAF4FF;
+    margin-bottom: 5px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    border-radius: 4px;
+}
+
+.intro_tags ul li a {
+    display: block;
+    padding-left: 28px;
+    padding-right: 11px;
+    line-height: 35px;
+    position: relative;
+    color: #3D99FC;
+    font-size: 14px;
+    font-weight: 200;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.intro_tags ul li a::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: "";
+    left: 9px;
+    top: 12px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.intro_price_container {
+    height: 86px;
+    padding-left: 48px;
+    padding-right: 43px;
+    background: linear-gradient(to right,#049FFE,#0050FB);
+    border-radius: 4px;
+}
+.intro_price_container > div:first-child {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.75;
+}
+.intro_price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 0.75;
+    margin-top: 12px;
 }
